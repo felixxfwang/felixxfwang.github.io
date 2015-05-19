@@ -1,4 +1,4 @@
-<!-- Google Analysis For website tracking -->
+<!-- Google Analysis For website tracking 
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -9,6 +9,6 @@
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script> 
 
-</script>
+-->

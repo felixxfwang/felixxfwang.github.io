@@ -1,5 +1,5 @@
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.permalink }}"></div>
+	<div class="ds-thread" data-thread-key="{{ page.path }}" data-title="{{ page.title }}" data-url="{{ page.permalink }}"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -12,8 +12,9 @@ var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
 		(document.getElementsByTagName('head')[0] 
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
-</script>
+	</script>
 <!-- 多说公共JS代码 end -->
+
 
 
 <!-- Add Disqus Comment (Not Use now 2014-07-11 01:13:09!) -->
