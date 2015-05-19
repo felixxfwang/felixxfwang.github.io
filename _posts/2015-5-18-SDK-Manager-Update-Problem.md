@@ -36,7 +36,7 @@ http://mirrors.neusoft.edu.cn 端口：80
 
 SDK Manager -> Tools -> Options，会出现下面的界面：  
 
-![]({{ site.baseurl }}/images/sdk-manager-proxy-settings.png)  
+![]({{ site.baseurl }}/img/sdk-manager-proxy-settings.png)  
 
 按上图中红框标示区域设置Http Proxy Server和Port，并且勾选Force https://... sources to be fetched using http://...
 
