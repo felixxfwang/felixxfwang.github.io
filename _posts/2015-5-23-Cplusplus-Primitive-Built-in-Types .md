@@ -1,7 +1,7 @@
 ---
 layout: post
-category: [C++,学习笔记]
-title: C++中的基本数据类型
+category: C++学习笔记
+title: C++中的基本数据类型（Primitive Built-in Types）
 tags: C++
 ---
 
@@ -52,10 +52,10 @@ signed char c2 = 256; // 假设char是8位的，则c is undefined
 
 unsigned u = 10;  
 int i = -42;  
-std:cout << u+i <<std:endl; // 如何是32位的int，则打印 4294967264  
+std:cout << u+i <<std:endl; // 如果是32位的int，则打印 4294967264  
 
 unsigned u1 = 42, u2 =10;
-std:cout << u2-u1 <<std:endl; // 如何是32位的int，则打印 4294967274  
+std:cout << u2-u1 <<std:endl; // 如果是32位的int，则打印 4294967274  
 {% endhighlight %}
 
 1. 将超过范围的数值赋给unsigned的类型，编译器会将该值对unsigned类型的所有可能取值数目求模，然后取所得值。如上例中-1对2的8次方求模，得255。

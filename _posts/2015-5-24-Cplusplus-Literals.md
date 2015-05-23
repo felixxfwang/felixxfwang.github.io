@@ -37,6 +37,7 @@ tags: C++
 'a'     //字符字面量, 默认是char，L'a'表示wchar_t类型
 "a"     // 字符串字面量->"a\0"（这是为了兼容C语言）
 L"Hello world!"     // 宽字符串
+
 "Hello "
 "World!"     //multiline string literal
 {% endhighlight %}
@@ -58,35 +59,35 @@ L"Hello world!"     // 宽字符串
 |回车符    | carriage return |    \r|
 |进纸符     |formfeed     |\f|
 |报警（响铃）符 |    alert（bell） |    \a|
-|反斜线     |backslash     |\\|
+|反斜线     | backslash | \\\\ |
 |疑问号     |question mark  |   \?|
-|单引号     |single quote   |  \'|
-|双引号     |double quote   |  \"|
+|单引号     |single quote   |  \\'|
+|双引号     |double quote   |  \\"|
 
 ### 通用转义字符：可以将任何字符用通用转义字符来表示。
 * 八进制表示形式：
 {% highlight c %}
-\o
-\oo
-\ooo
+"\o"
+"\oo"
+"\ooo"
 {% endhighlight %}
 最多三个八进制数。
 
 * 十六进制表示形式:
 {% highlight c %}
-\xh
-\xhhh...
+"\xh"
+"\xhhh..."
 {% endhighlight %}
 一个或多个十六进制数字。
 
 * 举例：（ASCII码字符集)
 {% highlight c %}
-\7 (bell)
-\12(newline)
-\40(blanck)
-\0(null)
-\115('M')
-\x4d('M')
+'\7' (bell)
+'\12'(newline)
+'\40'(blank)
+'\0'(null)
+'\115'('M')
+'\x4d'('M')
 {% endhighlight %}
 
 
@@ -98,14 +99,14 @@ L"Hello world!"     // 宽字符串
 |L|宽字符 |wchar_t|
 |u8|utf-8(仅限字符串字面量)|char|  
 
-
+---  
 
 |*后缀*  |   *最小类型*|
 |u or U   |  unsigned     |
 |l or L   |  long|
 |ll or LL   |  long long|  
 
-
+---  
 
 |*后缀* |   *类型*|
 |f or F  |   float|
@@ -114,10 +115,10 @@ L"Hello world!"     // 宽字符串
 ### 前后缀使用实例
 {% highlight c %}
 L'a'     // wide character
-u8"Hi!"      // utf-8 string
+u8"Hi!"  // utf-8 string
 128u     // unsigned
-1024UL     // unsigned long
-1L     // long
-8Lu     // unsigned long
-1E-3F     // float
+1024UL   // unsigned long
+1L     	 // long
+8Lu      // unsigned long
+1E-3F    // float
 {% endhighlight %}
