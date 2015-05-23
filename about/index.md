@@ -18,4 +18,4 @@ comments: yes
 
 ### 联系我
 
-[514213089@qq.com](mailto:514213089@qq.com)
+[felixxfwang@foxmail.com](mailto:felixxfwang@foxmail.com)
